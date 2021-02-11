@@ -1,4 +1,4 @@
-alert('connetced')
+console.log('connetced')
 
 
 const inventors = [
@@ -94,12 +94,10 @@ const born = inventors.filter((inventors)=>{
 // 2. Give us an array of the inventors first and last names
 
 
-const givenName = inventors.map((firstName, lastName , inventors) =>{
-  const fullName = 'firstName'+ + 'lastName'
- return inventors.fullName
-})
-
-console.log(inventors)
+ const fullName = inventors.map((inventors) => {
+  return inventors.first
+ });
+console.log( fullName)
 
 
 
@@ -109,10 +107,10 @@ console.log(inventors)
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
 
-// const birthdate = inventors.sort((inventors, year)=>{
-//   return inventors.year
-// })
-// console.log(birthdate)
+const birthdate = inventors.map(( inventors)=>{
+  return inventors.year
+})
+console.log(birthdate)
 
 
 
@@ -125,11 +123,11 @@ console.log(inventors)
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
 
-// const yearslived = inventors.reduce((yearslived, inventors)=>{
-//   return inventors.yearslived - passed
+// const yearslived = inventors.reduce((inventors)=>{
+//   return inventors
 // })
 
-// console.log('yearslived')
+// console.log(yearslived)
 
 
 
@@ -140,6 +138,11 @@ console.log(inventors)
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+
+const lastName = inventors.map((inventors) => {
+  return inventors.last
+ })
+console.log(lastName)
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
